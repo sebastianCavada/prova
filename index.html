@@ -7,6 +7,7 @@
             var link = document.getElementById("inserisci").value;    
             alert(link)
             var text = '<iframe src="' + link + '"></iframe>';
+            alert(text);
             document.getElementById("contenitore").innerHTML = text;
         }
     </script>
@@ -16,7 +17,7 @@
             <h1>BreakingProxy</h1>            
             <input type="text" id="inserisci"  placeholder="Inserisci il link qui...">
             <input type="button" id="cerca" value="cerca" onclick="cerca()">  
-            <div class="contenitore">                
+            <div id="contenitore">                
             </div>
         </center>
     </body>
