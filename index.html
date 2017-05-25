@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>BreakingProxy</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script>
+        function cerca()
+        {
+            var link = document.getElementById("inserisci").value;            
+            var text = '<iframe src="' + link + ''"></iframe>';
+            document.getElementById("contenitore").innerHTML = text;
+        }
+    </script>
+</head>
+    <body >
+        <center style="background-color:#3d3d3d">            
+            <h1>BreakingProxy</h1>            
+            <input type="text" id="inserisci"  placeholder="Inserisci il link qui...">
+            <input type="button" id="cerca" value="cerca" onclick="cerca()">  
+            <div class="contenitore">                
+            </div>
+        </center>
+    </body>
+</html>
