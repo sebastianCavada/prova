@@ -1,13 +1,26 @@
 <html>
 <head>
     <title>BreakingProxy</title>    
+    <style>
+        html, body, center{
+            margin:0;
+            border:0;
+        }
+        .contenitore{
+            background-color: #ffffff;
+        }
+        h1{
+            color: grey;
+        }
+        #cerca{
+            margin-bottom: 30px;
+        }
+    </style>
     <script>
         function cerca()
         {
             var link = document.getElementById("inserisci").value;    
-            alert(link)
-            var text = '<iframe src="' + link + '"></iframe>';
-            alert(text);
+            var text = '<iframe src="' + link + '"></iframe>'   
             document.getElementById("contenitore").innerHTML = text;
         }
     </script>
